@@ -169,55 +169,57 @@
     </style>
 
     <script>
-var B = 13; 
-var N = 11;
-var P = 10;
+var a = 5;
+var b = 10;
+var c = 15;
 
-
-function multiplyBtofive () {
-B = B * 5
-    document.getElementById("buttonone").innerHTML = B;
-}
-function addBto8 () {
-B = B + 8
-    document.getElementById("buttonone").innerHTML = B;
+function add100toa  () {
+a = a + 100;
+document.getElementById("buttonone").innerHTML = a;    
 }
 
-function addBto13 () {
-    B = B + 13
-        document.getElementById("buttonone").innerHTML = B;
-
-}
-    function addNby11 () {
-    N = N + 11
-    document.getElementByID("buttonfive").innerHTML = N;
+function add200tob () {
+b = b + 200;
+document.getElementById("buttonfive").innerHTML = b;   
 }
 
-function subtractNby3 () {
-N = N - 11
-document.getElementByID("buttonfive").innerHTML = N;
-} 
-function multiplyNby4 () {
-N = N - 11
-document.getElementByID("buttonfive").innerHTML = N;
+function add300toc () {
+c = c + 300;
+document.getElementById("buttonnine").innerHTML = c;    
 }
 
-function addPby2 () {
-P = P + 2
-document.getElementByID("buttonnine").innerHTML = P;
-        
-function multiplePbyfive () {
-P = P * 5
-document.getElementByID("buttonnine").innerHTML = P;
-}   
-      
-function  subtractPby1 () {
-P = P - 1
-document.getElementByID("buttonnine").innerHTML = P;
+function multiplyabytwo () {
+a = a * 2;
+document.getElementById("buttonone").innerHTML = a;   
 }
 
+function multiplybby5 () {
+b = b * 5;
+document.getElementById("buttonfive").innerHTML = b;    
+}
 
-</script>
+function multiplycby40 () {
+c = c * 40;
+document.getElementById("buttonnine").innerHTML = c;    
+}
+
+function subtractonefroma() {
+a = a - 1;
+document.getElementById("buttonone").innerHTML = a;   
+}
+
+function subtracttwofromb () {
+b = b - 2;
+document.getElementById("buttonfive").innerHTML = b;    
+}
+
+function subtractthreebyc () {
+c = c - 3;
+document.getElementById("buttonnine").innerHTML = c;    
+}
+    
+
+    </script>
 </head>
 
 <body>
@@ -238,90 +240,94 @@ document.getElementByID("buttonnine").innerHTML = P;
 
 
     <div class="button1"  onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-    <button class="displayButton" id=buttonone">
+       <button class="displayButton" id="buttonone"> 
+
 
        </button> 
     </div>
 
     <div class="button2"  onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button id="idB" onclick = "multiplyBby5();"> Click to multiply B by 5 </button>
+       
+        <button id="ida" onclick = "addthreetoa ();"> Click to add 5 to A </button>
 
 
+      
     </div>
 
     <div class="button3"  onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button id="idB" onclick = "addBby8();"> Click to add 8 to B </button>
+        
+      <button id="ida" onclick = "addtwotoa();"> Click to multiply A by 2 </button> 
 
-
-        </button>
 
 
     </div>
 
     <div class="button4" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button id="idB" onclick = "addBby13();"> Click to add 13 to B </button>
+        <button id="ida" onclick = "subtracttenfroma();"> Click to subtract 10 from A </button>
 
 
-        </button>
+       
 
     </div>
    
     
     <div class="button5" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button class="displayButton" id=buttonfive">
+        <button class="displayButton" id="buttonfive"> 
 
 
-        </button>
+
+
+      
 
     </div>
     <div class="button6" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-         <button id="idN" onclick = "addNby11();"> Click to add 11 to N </button>
+        
+        <button id="idb" onclick = "addfivetob();"> Click to add 5 to B </button>
 
-
-        </button>
 
     </div>
     <div class="button7" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button id="idN" onclick = "subtractNby3();"> Click to subtract 3 to N </button>
+        <button id="idb" onclick = "multiplybbytwo();"> Click to multiply B by 2
 
 
         </button>
 
     </div>
     <div class="button8" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-         <button id="idN" onclick = "multiplyNby4();"> Click to multiply 4 to N </button>
+        <button id="idb" onclick = "subtracttenfromb();"> Click to subtract 10 from B </button>
 
 
-        </button>
+       
 
     </div>
     <div class="button9" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button  class="displayButton" id="buttonnine">
+        <button class="displayButton" id="buttonnine"> 
 
 
-        </button> 
+
+        </button>
 
     </div>
 
     <div class="button10" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button id="idP" onclick = "addPby2();"> Click to add 2 to P </button>
+        
+        <button id="idc" onclick = "addfivetoc();"> Click to add 5 to C </button>
 
 
-        </button>
 
     </div>
     <div class="button11" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button id="idP" onclick = "multiplyPby5();"> Click to multiply 5 to P </button>
+        <button id="idc" onclick = "multiplycbytwo();"> Click to multiply C by 2 </button>
 
 
-        </button>
+      
 
     </div>
     <div class="button12" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button id="idP" onclick = "subtractPby1();"> Click to subtract 1 to P </button>
+        <button id="idc" onclick = "subtracttenbyc();"> Click to subtract 10 from C </button>
 
 
-        </button>
+      
 
     </div>
 
